@@ -1,0 +1,281 @@
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>XIgmi</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body,
+		a {
+			margin: 0;
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		main {
+			padding-top: 50px;
+		}
+
+		body {
+			color: dark-gray;
+			font-family: Rancho, sans-serif;
+			text-align: center;
+		}
+
+		h1,
+		h2 {
+			font-family: Rancho, cursive;
+			margin: 0.125em;
+		}
+
+		h1 {
+			font-size: 6em;
+			margin: 0.5em;
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 1.7em;
+		}
+
+		img {
+			padding: 1em;
+		}
+
+		.mobile-menu {
+		  display:block;
+		  width:100%;
+		background: #8aa8bd/*e0b88f/*c99393/*e5d1a4/*dcc591/*EFD3A3*/;
+		line-height: 1.6em;
+		font-weight: 400;
+		width:100%;
+		text-align:center;
+			position: relative;
+		  margin:0 auto;
+		}
+		/*Strip the ul of padding and list styling*/
+		.mobile-menu ul {
+			list-style-type:none;
+		  margin: 0 auto;
+		  padding-left:0;
+		  text-align:center;
+		  width:100%;
+		  position: absolute;
+		  background: #8aa8bd;
+		}
+
+		/*Create a horizontal list with spacing*/
+		.mobile-menu li {
+			display:inline-block;
+			/*float: left;
+			margin-right: 1px;*/
+		}
+
+		/*Style for menu links*/
+		.mobile-menu li a {
+			display:block;
+			min-width:140px;
+			text-align: center;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color: #fff;
+		  text-transform:uppercase;
+			background: #8aa8bd;
+			text-decoration: none;
+		  margin-left:-5px;
+		  padding: 10px 0;  
+		-webkit-transition: all 0.4s ease 0s;
+		-moz-transition: all 0.4s ease 0s;
+		-ms-transition: all 0.4s ease 0s;
+		-o-transition: all 0.4s ease 0s;
+		transition: all 0.4s ease 0s;
+		}
+
+		/*Hover state for top level links*/
+		.mobile-menu li:hover a {
+			color: #4db3ff;
+		  background-color:#ccddee;
+		}
+
+		/*Style for dropdown links*/
+		.mobile-menu li:hover ul a {
+			background: #f3f3f3;
+			color: #2f3036;
+			height: 40px;
+			line-height: 40px;
+		}
+
+		/*Hover state for dropdown links*/
+		.mobile-menu li:hover .mobile-menu ul a:hover {
+			color: #4db3ff;
+		}
+
+		/*Hide dropdown links until they are needed*/
+		.mobile-menu li ul {
+			display: none;
+		}
+
+		/*Make dropdown links vertical*/
+		.mobile-menu li ul li {
+			display: block;
+			float: none;
+		}
+
+		/*Prevent text wrapping*/
+		.mobile-menu li ul li a {
+			width: auto;
+			min-width: 100px;
+			padding: 0 20px;
+		}
+
+
+		/*Style 'show menu' label button and hide it by default*/
+		.mobile-menu .show-menu {
+			text-decoration: none;
+			color: #fff;
+			background: #8aa8bd;
+			text-align: center;
+			padding: 10px 15px;
+			display: none;
+		  cursor: pointer;
+		  text-transform: uppercase;
+		}
+
+		.mobile-menu .show-menu span{
+		   padding-left: 25px;
+		}
+
+		/*Hide checkbox*/
+		.mobile-menu input[type=checkbox]{
+		    display: none;
+		}
+
+		/*Show menu when invisible checkbox is checked*/
+		.mobile-menu input[type=checkbox]:checked ~ #menu{
+		    display: block;
+		}
+
+		/*Responsive Styles*/
+
+		@media screen and (max-width : 800px){
+		  .mobile-menu .lines {
+		    border-bottom: 15px double #f8f8f8; 
+		    border-top: 5px solid #f8f8f8; 
+		    content:"";
+		    height: 5px; 
+		    width:20px;
+		    padding-right:15px;
+		  float: right;
+		}
+			/*Make dropdown links appear inline*/
+			.mobile-menu ul {
+				position: static;
+				display: none;
+			}
+			/*Create vertical spacing*/
+			.mobile-menu li {
+				margin-bottom: 1px;
+			}
+			/*Make all menu links full width*/
+			.mobile-menu ul li, .mobile-menu li a {
+				width: 100%;
+			}
+			/*Display 'show menu' link*/
+			.mobile-menu .show-menu {
+				display:block;
+			}
+		}
+
+		img {
+			display: block;
+			float: left;
+			width: 33%;
+		}
+
+		@media (max-width: 1240px) {
+			img {
+				display: block;
+				float: none;
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="mobile-menu">
+		<label for="show-menu" class="show-menu">
+			<span>Menu</span>
+			<div class="lines"></div>
+		</label>
+		<input type="checkbox" id="show-menu">
+		<ul id="menu">
+				<li><a href="https://www.xigmi.com">Home</a></li>
+				<li><a href="https://js.xigmi.com">IX JS</a></li>
+				<li><a href="https://variablequality.xigmi.com">Variable Q</a></li>
+				<li><a href="https://s3.xigmi.com">S3 Bucket</a></li>
+				<li><a href="https://gatsbyimagetest.netlify.com/">Gatsby image</a></li>
+				<li><a href="https://gatsbyimagetest.netlify.com/page-2">IX React</a></li>
+		</ul>
+	</nav>
+	<main>
+		<img ix-src="https://tom.imgix.net/artsy/1.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/2.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/3.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/4.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/5.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/6.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/7.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/8.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/9.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/10.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/11.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/12.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/13.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/14.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/15.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/16.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/17.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/18.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/19.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/20.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/21.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/22.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/23.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/24.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+		<img ix-src="https://tom.imgix.net/artsy/25.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+			sizes="(min-width: 1240px) 30vw, 90vw">
+	</main>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.1/lazysizes.min.js"></script>
+<script type="text/javascript" src="https://tom.imgix.net/imgix.js"></script>
+</html>
