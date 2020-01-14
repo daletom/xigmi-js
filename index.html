@@ -28,8 +28,7 @@
 			text-align: center;
 		}
 
-		h1,
-		h2 {
+		h1 {
 			font-family: Rancho, cursive;
 			margin: 0.125em;
 		}
@@ -235,8 +234,8 @@
 		<h2>This library builds the urls and srcsets of the image, you enter any additional API parameters and the sizes= attribute for the img tag.</h2>
 		<h4>Here you can find a link to the <a href="https://www.imgix.com/imgix-js">imgix.js</a> library.  For the code on this page, I am simply entering this for each img tag:</h4>
 		<pre>
-			&lt;img&gt;
-			&lt;ix-src="https://tom.imgix.net/folder/name.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" sizes="(min-width: 1240px) 30vw, 90vw"&gt;
+			
+			&lt;img ix-src="https://tom.imgix.net/folder/name.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" sizes="(min-width: 1240px) 30vw, 90vw"&gt;
 		</pre>
 		<h4>I am then choosing to reference the js library in a script tag at the bottom of the page, but you might want to install it via npm instead to keep up to date with new versions.</h4>
 	</div>
