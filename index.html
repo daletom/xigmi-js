@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<title>XIgmi JS</title>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<style>
 		* {
 			box-sizing: border-box;
@@ -228,6 +227,7 @@
 				<li><a href="https://s3.xigmi.com">S3 Bucket</a></li>
 				<li><a href="https://gatsbyimagetest.netlify.com/">Gatsby image</a></li>
 				<li><a href="https://gatsbyimagetest.netlify.com/page-2">IX React</a></li>
+				<li><a href="https://vue.xigmi.com">Vue JS</a></li>
 		</ul>
 	</nav>
 	<div>
@@ -236,63 +236,62 @@
 		<h4>Here you can find a link to the <a href="https://www.imgix.com/imgix-js">imgix.js</a> library.  For the code on this page, I am simply entering this for each img tag:</h4>
 		<pre>
 			
-			&lt;img ix-src="https://tom.imgix.net/folder/name.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" sizes="(min-width: 1240px) 30vw, 90vw"&gt;
+			&lt;img ix-src="https://tom.imgix.net/folder/name.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" sizes="(min-width: 1240px) 30vw, 90vw"&gt;
 		</pre>
-		<h4>I am then choosing to reference the js library in a script tag at the bottom of the page, but you might want to install it via npm instead to keep up to date with new versions.</h4>
+		<h4>I am then choosing to reference the js library in a script tag at the bottom of the page, but you might want to install it via npm instead to keep up to date with new versions. You can view the code <a href="https://github.com/daletom/xigmi-js">on Github</a></h4>
 	</div>
 	<main>
-		<img ix-src="https://tom.imgix.net/artsy/1.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/1.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/2.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/2.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/3.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/3.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/4.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/4.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/5.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/5.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/6.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/6.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/7.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/7.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/8.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/8.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/9.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/9.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/10.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/10.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/11.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/11.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/12.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/12.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/13.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/13.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/14.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/14.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/15.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/15.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/16.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/16.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/17.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/17.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/18.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/18.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/19.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/19.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/20.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/20.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/21.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/21.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/22.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/22.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/23.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/23.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/24.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/24.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
-		<img ix-src="https://tom.imgix.net/artsy/25.jpg?auto=format&fit=crop&crop=faces,entropy&ar=1:1" 
+		<img ix-src="https://tom.imgix.net/artsy/25.jpg?auto=format,compress&cs=tinysrgb&fit=crop&crop=faces,entropy&ar=1:1" 
 			sizes="(min-width: 1240px) 30vw, 90vw">
 	</main>
 </body>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.1/lazysizes.min.js"></script>
 <script type="text/javascript" src="https://tom.imgix.net/imgix.js"></script>
 </html>
